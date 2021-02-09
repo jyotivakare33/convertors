@@ -1,5 +1,5 @@
 
-const encode = document.querySelector('.btn');
+const encode = document.querySelector('.btn-encode');
 const clipboardIcon = document.querySelector('.clipboard-icon');
 const result = document.querySelector('.decode-content');
 const inputValue = document.querySelector('.encode-content');
