@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+    <div w3-include-html="header.html"></div>
+    <div class="heading">
+        <h1>Url Encoder/Decoder</h1>
+    </div>
+    <div class="textarea-content">
+        <div class="encoder">
+            <h1>Encode</h1>
+            <textarea class="encode-content" rows="15" cols="50" placeholder="Enter Encode Text" >
+            </textarea>
+        </div>
+        <div class="decoder">
+            <h1>Decode</h1>
+            <textarea class="decode-content" rows="15" cols="50" placeholder="Decoded text" disabled="true" readonly>
+            </textarea>
+            <img class="clipboard-icon" src="files (1).png"/>
+        </div>
+    </div>  
+    <div class="btn-group">
+        <button class="btn btn-encode">Encode Url</button>
+        <a href="decode.html"><button class="btn btn-decode">Decode Url</button></a>
+        <a href="base64-encode.html"><button class="btn btn-base64-encode">Base64 Encode</button></a>
+        <a href="base64-decode.html"><button class="btn btn-base64-decode">Base64 Decode</button></a>
+    </div>
+    <div class="read-more">
+        <a href="https://www.w3schools.com/tags/ref_urlencode.ASP" target="_blank">Read about Url Encoding</a>
+    </div>
+    <script>
+        w3IncludeHTML();
+    </script>
+        <script src="js/index.js" />
+</body>
+</html>

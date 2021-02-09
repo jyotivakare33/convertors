@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+    <div w3-include-html="header.html"></div>
+    <div class="heading">
+        <h1>MD5 Generator</h1>
+    </div>
+    <div class="textarea-content">
+        <div class="encoder">
+            <h1>Encode</h1>
+            <textarea class="encode-content" rows="15" cols="50" placeholder="Enter Encode Text" >
+            </textarea>
+        </div>
+        <div class="decoder">
+            <h1>Decode</h1>
+            <textarea class="decode-content" rows="15" cols="50" placeholder="Decoded text" disabled="true" readonly>
+            </textarea>
+            <img class="clipboard-icon" src="files (1).png"/>
+        </div>
+    </div>  
+    <div class="btn-group">
+        <a href="sha.html"><button class="btn sha1-encode">Sha 1</button></a>
+        <a href="sha256.html"><button class="btn sha256-encode">Sha 256</button></a>
+        <a href="sha512.html"><button class="btn sha512-encode">Sha 512</button></a>
+        <button class="btn md5-encode">MD5 Generator</button>
+    </div>
+    <div class="read-more">
+        <a href="https://www.w3schools.com/tags/ref_urlencode.ASP" target="_blank">Read about Url Encoding</a>
+    </div>
+    <script>
+        w3IncludeHTML();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="js/md5.js" />
+
+</body>
+</html>
